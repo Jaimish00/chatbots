@@ -1,0 +1,76 @@
+actions:
+  - custom_help_reply
+  - utter_ask_if_need_help
+  - utter_give_good_response
+  - utter_give_suggestion
+  - utter_make_user_feel_good
+  - give_recommendation
+  - show_message
+  - utter_professional_help
+  - utter_goodbye
+  - utter_greet_and_ask
+  - utter_ask_location
+  - utter_iamabot
+  - utter_rest_goodbye
+
+
+intents:
+  - greet
+  - user_entered_name
+  - user_entered_location
+  - user_gave_bad_response
+  - help_answer
+  - user_gave_good_response
+  - user_having_issue
+  - user_having_office_issue
+  - user_having_breakup
+  - user_having_education_issue
+  - answered_professional_help
+  - goodbye
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_ask_if_need_help:
+  - text: Do you need my help?
+  utter_give_good_response:
+  - text: That's great. I hope good for you😄
+  utter_give_suggestion:
+  - text: Whenever you feel low, Just talk to me. I am here for you always
+  utter_goodbye:
+  - text: Goodbye!
+  utter_greet_and_ask:
+  - text: Hey There! What is your name?
+  utter_greet_back:
+  - text: Good. How are you feeling?
+  utter_make_user_feel_good:
+  - text: Hey, Don't feel sad or depressed.
+  utter_professional_help:
+  - buttons:
+    - payload: yes, i need professional help
+      title: Yes
+    - payload: no, i don't need professional help
+      title: No
+    text: Do you need Professional Help?
+  utter_ask_location:
+  - buttons:
+    - payload: I live in Ahmedabad
+      title: Ahmedabad
+    - payload: I live in Mumbai
+      title: Mumbai
+    - payload: I live in Delhi
+      title: Delhi
+    - payload: I live in Bangalore
+      title: Bangalore
+    text: Great Name! Where do you live?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_rest_goodbye:
+  - text: You should rest for sometime. So put mobile aside and rest. Good Bye😴
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+templates:
+
+
